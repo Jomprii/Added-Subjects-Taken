@@ -5,7 +5,6 @@ fetch(jsonURL)
   .then((data) => {
     let courselist = document.getElementById("course-list");
 
-    // Check if JSON contains 'students' array
     if (data.courses && Array.isArray(data.courses)) {
       data.courses.forEach((course) => {
         let listItem = document.createElement("li");
